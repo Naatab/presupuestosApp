@@ -1,0 +1,39 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#calcular,
+#tarjetas {
+    margin: 2rem;
+}
+
+#gasto {
+    margin: 0 2rem 2rem 2rem;
+}
+
+#tablaGastos {
+    margin: 4rem 2rem 2rem 2rem;
+}
+
+#paginaPresupuesto {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+#ingresos {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#numeros {
+    grid-column-start: 4;
+    grid-column-end: 11;
+}
+
+.fas {
+    color: #43b1c7;
+}
+
+.rojo {
+    color: red;
+}

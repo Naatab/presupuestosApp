@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presupuestos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div>
+        <h1>Presupuesto App</h1>
+    </div>
+    <div id="paginaPresupuesto">
+        <section id="ingresos">
+            <div id="ingreso1">
+                <div id="calcular">
+                    <form id="formCalcular" class="border border-2 border-success rounded-3 bg-success-subtle p-2">
+                        <div class="mb-3">
+                            <label for="ingresaPresupuesto" class="form-label">Ingresa Tu Presupuesto</label>
+                            <input type="number" class="form-control border-secondary-subtle bg-success-subtle"
+                                id="inputPresupuesto" aria-describedby="inputPresupuesto" />
+                        </div>
+                        <button type="submit" class="btn btn-outline-success">
+                            Calcular
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="ingreso2">
+                <div id="gasto">
+                    <form id="formGasto" class="border border-2 border-danger rounded-3 bg-danger-subtle p-2">
+                        <div class="mb-3">
+                            <label for="nombreGasto" class="form-label">Ingresa El Nombre Del Gasto</label>
+                            <input type="text" class="form-control border-secondary-subtle bg-danger-subtle"
+                                id="inputNombreGasto" aria-describedby="inputIngresaNombreGasto" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidadGasto" class="form-label">Ingresa La Cantidad Del Gasto</label>
+                            <input type="number" class="form-control border-secondary-subtle bg-danger-subtle"
+                                id="inputCantidadGasto" />
+                        </div>
+                        <button id="botonGasto" type="submit" class="btn btn-outline-danger">
+                            Añadir Gasto
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="numeros">
+            <div id="tarjetas">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-presupuesto">PRESUPUESTO</h5>
+                            <p class="presupuesto"></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-gastos">GASTOS</h5>
+                            <p class="sumaGastos"></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-saldo">SALDO</h5>
+                            <p class="presupuestoMenosGastos"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tablaGastos">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">GASTO</th>
+                            <th scope="col">VALOR</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
